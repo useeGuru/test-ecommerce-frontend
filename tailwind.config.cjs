@@ -20,7 +20,7 @@ module.exports = {
       },
       backgroundImage: {
         // login: "url('https://images.pexels.com/photos/2112648/pexels-photo-2112648.jpeg?auto=compress&cs=tinysrgb&w=600')"
-        login: "url('./public/image/1.jpg')"
+        login: "url('/image/1.jpg')"
       }
     },
   },
