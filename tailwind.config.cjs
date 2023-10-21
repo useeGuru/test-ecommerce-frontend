@@ -19,7 +19,6 @@ module.exports = {
         'carousel': 'calc(100vh - 104px)', // 104 => 26*0.25*16
       },
       backgroundImage: {
-        // login: "url('https://images.pexels.com/photos/2112648/pexels-photo-2112648.jpeg?auto=compress&cs=tinysrgb&w=600')"
         login: "url('/image/1.jpg')"
       }
     },
