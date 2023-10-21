@@ -8,25 +8,25 @@ const Categories = () => {
       <div className='grid gap-2 md:grid-cols-3 mb-2'>
         <Categorie
           name='Clothes'
-          image='./public/image/clothes.jpg'
+          image='/image/clothes.jpg'
         />
         <Categorie
           name='Shoes'
-          image='./public/image/shoes.jpg'
+          image='/image/shoes.jpg'
         />
         <Categorie
           name='Electronics'
-          image='./public/image/electronics.jpg'
+          image='/image/electronics.jpg'
         />
       </div>
       <div className='grid gap-2 md:grid-cols-2'>
         <Categorie
           name='Special'
-          image='./public/image/special.jpg'
+          image='/image/special.jpg'
         />
         <Categorie
           name='Others'
-          image='./public/image/other.jpg'
+          image='/image/other.jpg'
         />
       </div>
     </section>

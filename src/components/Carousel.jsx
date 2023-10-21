@@ -5,13 +5,13 @@ import { Link } from 'react-scroll';
 
 const CAROUSEL_DATA = [
   {
-    url: './public/image/clothes.jpg',
+    url: '/image/clothes.jpg',
   },
   {
-    url: './public/image/shoes.jpg',
+    url: '/image/shoes.jpg',
   },
   {
-    url: './public/image/electronics.jpg',
+    url: '/image/electronics.jpg',
   },
 ];
 const Carousel = () => {
