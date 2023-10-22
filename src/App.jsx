@@ -11,8 +11,6 @@ import Signup from './pages/Signup';
 import Login from './pages/Login';
 import ResetPassword from './pages/ResetPassword';
 import { Redirect } from 'react-router-dom/cjs/react-router-dom.min';
-import dotenv from 'dotenv';
-dotenv.config();
 
 const App = () => {
   const user = useSelector((store) => store.auth.currentUser);
