@@ -31,6 +31,8 @@ const Signup = () => {
   const dispatch = useDispatch();
   const auth = useSelector((store) => store.auth);
   const errors = auth.error
+  console.log('errors', errors);
+  console.log('success', auth);
   const formik = useFormik({
     initialValues,
     validationSchema,
@@ -44,7 +46,11 @@ const Signup = () => {
           password: values.password
         })
       );
-      toast.success(errors[0].msg);
+      if(errors) {
+        toast.error('Again register');
+      } else {
+        toast.success('Register Success!');
+      }
       console.log('info', values);
     },
   });

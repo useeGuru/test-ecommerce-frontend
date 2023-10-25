@@ -1,5 +1,5 @@
 ---
-title: Vite + React
+title: Vite + React + Tailwind CSS + Node.js
 description: The default Vite + React starter, utilizing `Caddy` to serve the built app
 tags:
   - node
@@ -7,35 +7,116 @@ tags:
   - react
 ---
 
-# Vite + React + Caddy
+# Vite + React + Tailwind CSS + Node.js
 
-This is a [Vite + React](https://vitejs.dev/guide/#trying-vite-online) starter that uses [Caddy](https://caddyserver.com/).
+This is a [Vite + React](https://vitejs.dev/guide/#trying-vite-online).
 
 [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/NeiLty?referralCode=ySCnWl)
 
 ## ✨ Features
 
-- Vite + React
-- [Caddy](https://caddyserver.com/)
 
 ## 💁‍♀️ How to use
 
 - Install required dependencies with `npm install`
 - Start the server for local development `npm run dev`
+                                         `npm run build`
 
-## ❓ Why use `Caddy` when deploying to Railway?
+### 💻 Server
 
-Caddy is a powerful, enterprise-ready, open source web server, and therefore Caddy is far better suited to serve websites than Vite is, using Caddy will result in much less memory and cpu usage compared to serving with Vite (much lower running costs too)
+1. **_Navigate to the server directory_**
 
-To see how this is achieved with nixpacks, check out the fully documented nixpacks.toml file in this repository
+```sh
+$ cd server
+```
 
-The configuration for Caddy is called a Caddyfile, and you can edit that file to further suite your needs, by default it comes configured to serve a single page app for React, and to also gzip the responses
+2. **_Install dependencies_**
 
-**Relevant Caddy documentation:**
+```sh
+$ npm install
+```
 
-- [The Caddyfile](https://caddyserver.com/docs/caddyfile)
-- [Caddyfile Directives](https://caddyserver.com/docs/caddyfile/directives)
-- [root](https://caddyserver.com/docs/caddyfile/directives/root)
-- [encode](https://caddyserver.com/docs/caddyfile/directives/encode)
-- [file_server](https://caddyserver.com/docs/caddyfile/directives/file_server)
-- [try_files](https://caddyserver.com/docs/caddyfile/directives/try_files)
+#### Running
+
+1. **_Compile and hot-reload for development_**
+
+```sh
+$ npm run start
+```
+
+2. **_Compile for production_**
+
+```sh
+$ npm run build
+```
+
+## 💻 Built With
+
+- **ReactJS**
+- **Redux**
+- **NodeJS**
+- **ExpressJS**
+- **MongoDB**
+- **TailwindCSS**
+
+## 📂 File Structure
+
+```sh
+|-- README.md
+|-- client
+|   |-- index.html
+|   |-- package-lock.json
+|   |-- package.json
+|   |-- postcss.config.cjs
+|   |-- public
+|   |-- src
+|   |   |-- App.jsx
+|   |   |-- components
+|   |   |   |-- Carousel.jsx
+|   |   |   |-- CartProduct.jsx
+|   |   |   |-- Categorie.jsx
+|   |   |   |-- Categories.jsx
+|   |   |   |-- Product.jsx
+|   |   |   |-- Products.jsx
+|   |   |   `-- Title.jsx
+|   |   |-- index.css
+|   |   |-- layout
+|   |   |   |-- Footer.jsx
+|   |   |   `-- Navbar.jsx
+|   |   |-- main.jsx
+|   |   |-- pages
+|   |   |   |-- Home.jsx
+|   |   |   |-- Login.jsx
+|   |   |   |-- ShoppingCart.jsx
+|   |   |   |-- ShoppingCategorie.jsx
+|   |   |   |-- Signup.jsx
+|   |   |   `-- SingleProduct.jsx
+|   |   |-- request-methods.js
+|   |   `-- store
+|   |       |-- auth-actions.js
+|   |       |-- auth-slice.js
+|   |       |-- cart-slice.js
+|   |       `-- index.js
+|   |-- tailwind.config.cjs
+|   `-- vite.config.js
+`-- server
+    |-- controllers
+    |   |-- auth.js
+    |   |-- product.js
+    |   `-- user.js
+    |-- index.js
+    |-- middlewares
+    |   `-- verifyToken.js
+    |-- models
+    |   |-- Product.js
+    |   `-- User.js
+    |-- package-lock.json
+    |-- package.json
+    `-- routes
+        |-- auth.js
+        |-- product.js
+        `-- user.js
+```
+## 🎥 Demo Videos
+
+

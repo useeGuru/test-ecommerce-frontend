@@ -14,7 +14,6 @@ import { Redirect } from 'react-router-dom/cjs/react-router-dom.min';
 
 const App = () => {
   const user = useSelector((store) => store.auth.currentUser);
-  console.log('user', user)
   return (
     <Switch>
       <PrivateRoute exact path='/'>

@@ -3,7 +3,7 @@ import { createSlice } from '@reduxjs/toolkit';
 const initialState = {
   currentUser: null,
   isFetching: false,
-  error: false
+  error: []
 };
 const authSlice = createSlice({
   name: 'auth',
@@ -15,7 +15,7 @@ const authSlice = createSlice({
     loginSuccess(state, action) {
       state.isFetching = false;
       state.currentUser = action.payload;
-      state.error = false;
+      state.error = null;
     },
     loginFailure(state, action) {
       state.isFetching = false;
@@ -27,7 +27,7 @@ const authSlice = createSlice({
     registerSuccess(state, action) {
       state.isFetching = false;
       state.currentUser = action.payload;
-      state.error = false;
+      state.error = [];
     },
     registerFailure(state, action) {
       state.isFetching = false;
