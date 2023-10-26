@@ -1,10 +1,11 @@
 ---
 title: Vite + React + Tailwind CSS + Node.js
-description: The default Vite + React starter, utilizing `Caddy` to serve the built app
+description: This test project is a simple site that implements some of the functions of an e-commerce site.
 tags:
   - node
   - vite
   - react
+  - tailwind css
 ---
 
 # Vite + React + Tailwind CSS + Node.js
@@ -117,6 +118,22 @@ $ npm run build
         |-- product.js
         `-- user.js
 ```
-## 🎥 Demo Videos
+##  Features and Requirements
 
+1. Authentication Page
+    Login - Username/Email and password
+    Registration - Username, Email, Password, Confirm Password
+    Password Recovery - Email
+2. Product Listing:
+    Fetch products from a provided API or create a mock API using tools like JSON Server.
+    Implement infinite scrolling or pagination to load more products as the user scrolls down.
+3. Product Details:
+    On clicking a product, the user should be taken to a detailed product page with additional information.
+4. Shopping Cart:
+    Users should be able to add products to the shopping cart.
+    Implement a cart icon with a counter indicating the number of items in the cart.
+5. Responsive Design:
+    The application should be fully responsive and optimized for various screen sizes.
+6. State Management:
+    Implement state management (you may use Redux, Context API, etc.)
 
