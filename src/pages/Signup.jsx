@@ -1,7 +1,6 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useFormik } from 'formik';
-import { toast } from 'react-toastify';
 import * as Yup from 'yup';
 
 import { Link } from 'react-router-dom';
@@ -46,11 +45,6 @@ const Signup = () => {
           password: values.password
         })
       );
-      if(errors) {
-        toast.error('Again register');
-      } else {
-        toast.success('Register Success!');
-      }
       console.log('info', values);
     },
   });

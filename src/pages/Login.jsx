@@ -1,9 +1,7 @@
 import React, { useRef } from 'react';
 
 import { Link } from 'react-router-dom';
-import { toast } from 'react-toastify';
 import { useDispatch, useSelector } from 'react-redux';
-import 'react-toastify/dist/ReactToastify.css';
 
 import { login } from '../store/auth-actions';
 
@@ -12,7 +10,6 @@ const Login = () => {
   //const [errorMsg, setErrorMsg] = useState('');
   const auth = useSelector((store) => store.auth);
   const errors = auth.error
-  console.log('errorslogin', errors)
   const usernameRef = useRef();
   const passwordRef = useRef();
   const formSubmitHandler = (e) => {
@@ -26,11 +23,6 @@ const Login = () => {
         password,
       })
     );
-    if(!errors) {
-      toast.success('Login Success!');
-    } else {
-      toast.error(errors.message)
-    }
     usernameRef.current.value = '';
     passwordRef.current.value = '';
   };
